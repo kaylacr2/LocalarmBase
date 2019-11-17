@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/nav_list">
+
+    <!-- Currently all fragments to default fragment_home -->
+
+    <fragment
+        android:id="@+id/nav_list"
+        android:name="com.example.localarmbase.ui.home.HomeFragment"
+        android:label="@string/header_tasks"
+        tools:layout="@layout/fragment_home" /> <!-- Home to List View -->
+
+    <fragment
+        android:id="@+id/nav_map"
+        android:name="com.example.localarmbase.ui.home.HomeFragment"
+        android:label="@string/menu_mapview"
+        tools:layout="@layout/fragment_home" /> <!-- Gallery to Map View -->
+
+    <fragment
+        android:id="@+id/nav_calendar"
+        android:name="com.example.localarmbase.ui.home.HomeFragment"
+        android:label="@string/menu_calendarview"
+        tools:layout="@layout/fragment_home" /> <!-- Slideshow to Calendar View -->
+
+    <fragment
+        android:id="@+id/nav_settings"
+        android:name="com.example.localarmbase.ui.home.HomeFragment"
+        android:label="@string/menu_settings"
+        tools:layout="@layout/fragment_home" /> <!-- Tools to Settings -->
+</navigation>
